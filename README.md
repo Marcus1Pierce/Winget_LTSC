@@ -14,7 +14,7 @@ This guide explains how to install and use **WinGet**, Microsoft's command-line 
 
 ## 2. Download the Required Files
 
-All required files are available from the [WinGet CLI GitHub releases page](https://github.com/microsoft/winget-cli/releases) (download the **latest stable version**, not a pre-release).
+All required files are available from the [WinGet CLI GitHub releases page](https://github.com/microsoft/winget-cli/releases/latest) (download the **latest stable version**, not a pre-release).
 
 You must download:
 - The `.msixbundle` file  
