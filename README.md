@@ -41,8 +41,16 @@ Run the following commands in an **elevated PowerShell** window, adjusting file 
 
 ```powershell
 Add-AppxPackage -Path "<path-to-Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x64.appx>"
+```
+```powershell
 Add-AppxPackage -Path "<path-to-Microsoft.UI.Xaml.2.8_8.2310.30001.0_x64.appx>"
+```
+```powershell
 Add-AppxPackage -Path "<path-to-msixbundle>" -LicensePath "<path-to-License1.xml>"
+```
+If you want to install for all users on the system, use this command instead for the last step:
+```powershell
+Add-AppxProvisionedPackage -Online -PackagePath <path-to-msixbundle> -LicensePath <path-to-License1.xml>
 ```
 
 ## 5. Verify the Installation
