@@ -27,36 +27,38 @@ You must download:
 
 1. Open `DesktopAppInstaller_Dependencies.zip`.  
 2. Navigate to the folder matching your device architecture (`x64`, `arm64`, etc.).  
-3. You should see files similar to the following (versions here are **examples** and may differ in newer releases):
-   - `Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x64.appx`  
-   - `Microsoft.UI.Xaml.2.8_8.2310.30001.0_x64.appx`  
+3. You should see files similar to the following:
+   - `Microsoft.VCLibs.**.appx`  
+   - `Microsoft.UI.Xaml.**.appx`  
 
 These must be installed before WinGet itself.
 
 ---
 
-## 4. Install the Packages (Example: PowerShell)
+## 4. Install the Packages
 
-Run the following commands in an **elevated PowerShell** window, adjusting file paths as needed:
+Run the following commands in an **elevated PowerShell** window, adjusting file paths as needed. 
 
 ```powershell
-Add-AppxPackage -Path "<path-to-Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x64.appx>"
+Add-AppxPackage -Path .\Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x64.appx
 ```
 ```powershell
-Add-AppxPackage -Path "<path-to-Microsoft.UI.Xaml.2.8_8.2310.30001.0_x64.appx>"
+Add-AppxPackage -Path .\Microsoft.UI.Xaml.2.8_8.2310.30001.0_x64.appx
 ```
 ```powershell
-Add-AppxPackage -Path "<path-to-msixbundle>" -LicensePath "<path-to-License1.xml>"
+Add-AppxPackage -Path .\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+ -LicensePath .\e53e159d00e04f729cc2180cffd1c02e_License1.xml
 ```
 If you want to install for all users on the system, use this command instead for the last step:
 ```powershell
-Add-AppxProvisionedPackage -Online -PackagePath <path-to-msixbundle> -LicensePath <path-to-License1.xml>
+Add-AppxProvisionedPackage -Online -PackagePath .\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+ -LicensePath .\e53e159d00e04f729cc2180cffd1c02e_License1.xml
 ```
 
 ## 5. Verify the Installation
-To confirm that WinGet is installed, run:
+To confirm that WinGet is installed, run to check version installed:
 ```powershell
-winget
+winget --version
 ```
 
 ## 6. Additional Notes & Tips
@@ -70,7 +72,13 @@ For usage examples and more commands, check the official WinGet documentation.
 ```powershell
 # Search for a package
 winget search brave
+```
 
+```powershell
 # Install a package
 winget install Brave.Brave
 ```
+
+### My Apps
+```powershell
+winget install Google.Chrome RARLab.WinRAR Adobe.Acrobat.Reader.64-bit joncampbell123.DOSBox-X RustDesk.RustDesk DucFabulous.UltraViewer
