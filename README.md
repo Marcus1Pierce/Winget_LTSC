@@ -29,7 +29,7 @@ You must download:
 2. Navigate to the folder matching your device architecture (`x64`, `arm64`, etc.).  
 3. You should see files similar to the following:
    - `Microsoft.VCLibs.**.appx`  
-   - `Microsoft.UI.Xaml.**.appx`  
+   - `Microsoft.WindowsAppRuntime.**.appx`  
 
 These must be installed before WinGet itself.
 
@@ -37,7 +37,8 @@ These must be installed before WinGet itself.
 
 ## 4. Install the Packages
 
-Run the following commands in an **elevated PowerShell** window, adjusting file paths as needed. 
+**Run the commands below in an elevated PowerShell window.**  
+Important: before running any command, make sure PowerShell’s current directory is the folder where you extracted the files (use `cd "C:\path\to\folder"` or `Set-Location`). Verify with `pwd`. Adjust file names and paths in the commands as needed.
 
 ```powershell
 Add-AppxPackage -Path .\Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x64.appx
