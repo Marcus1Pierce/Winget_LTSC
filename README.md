@@ -43,7 +43,10 @@ Run the following commands in an **elevated PowerShell** window, adjusting file 
 Add-AppxPackage -Path .\Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x64.appx
 ```
 ```powershell
-Add-AppxPackage -Path .\Microsoft.UI.Xaml.2.8_8.2310.30001.0_x64.appx
+Add-AppxPackage -Path .\Microsoft.VCLibs.140.00_14.0.33519.0_x64.appx
+```
+```powershell
+Add-AppxPackage -Path .\Microsoft.WindowsAppRuntime.1.8_8000.616.304.0_x64.appx
 ```
 ```powershell
 Add-AppxPackage -Path .\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -LicensePath .\e53e159d00e04f729cc2180cffd1c02e_License1.xml
