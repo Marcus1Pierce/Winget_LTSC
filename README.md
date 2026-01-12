@@ -84,7 +84,7 @@ winget install Brave.Brave
 
 ### My Apps
 ```powershell
-winget install Google.Chrome RARLab.WinRAR Adobe.Acrobat.Reader.64-bit RustDesk.RustDesk DucFabulous.UltraViewer DuongDieuPhap.ImageGlass
+winget install Google.Chrome RARLab.WinRAR Adobe.Acrobat.Reader.64-bit RustDesk.RustDesk DucFabulous.UltraViewer
 ```
 ### Additional
 ```powershell
