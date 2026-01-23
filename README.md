@@ -38,7 +38,8 @@ These must be installed before WinGet itself.
 ## 4. Install the Packages
 
 **Run the commands below in an elevated PowerShell window.**  
-Important: before running any command, make sure PowerShell’s current directory is the folder where you extracted the files (use `cd "C:\path\to\folder"` or `Set-Location`). Verify with `pwd`. Adjust file names and paths in the commands as needed.
+Important: before running any command, make sure PowerShell’s current directory is the folder where you extracted the files (use `cd "C:\path\to\folder"` or `Set-Location`). Verify with `pwd`. Adjust file names and paths in the commands as needed. Note: the commands below are examples for x64 and the versions may differ.
+```
 
 ```powershell
 Add-AppxPackage -Path .\Microsoft.VCLibs.140.00.UWPDesktop_14.0.33728.0_x64.appx
@@ -84,7 +85,7 @@ winget install Brave.Brave
 
 ### My Apps
 ```powershell
-winget install Google.Chrome RARLab.WinRAR Adobe.Acrobat.Reader.64-bit RustDesk.RustDesk DucFabulous.UltraViewer
+winget install Google.Chrome.EXE RARLab.WinRAR Adobe.Acrobat.Reader.64-bit RustDesk.RustDesk DucFabulous.UltraViewer
 ```
 ### Additional
 ```powershell
