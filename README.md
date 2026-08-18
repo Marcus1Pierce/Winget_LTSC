@@ -84,7 +84,7 @@ winget install Brave.Brave
 
 ### My Apps
 ```powershell
-winget install Google.Chrome RARLab.WinRAR Adobe.Acrobat.Reader.64-bit DucFabulous.UltraViewer
+winget install Google.Chrome RARLab.WinRAR Adobe.Acrobat.Reader.64-bit DucFabulous.UltraViewer FastStone.Viewer
 ```
 ### Additional
 ```powershell
